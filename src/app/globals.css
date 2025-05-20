@@ -14,15 +14,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --backgound: #ededed;
+    --foreground: #0a0a0a;
+    
   }
-} */
+} 
 
-html, body {
+body {
   background: var(--background);
-  color: black !important;
+  color: var(--foreground);
   font-family: 'Roboto', sans-serif;
 }
