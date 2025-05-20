@@ -1,102 +1,210 @@
+import Nav from "./components/Nav";
 import Image from "next/image";
+import cutivateur from "../../public/assets/images/WhatsApp Image 2025-05-20 at 6.01.01 PM.jpeg"
+import probleme from "../../public/assets/images/20250520_1616_Défis Agricoles_simple_compose_01jvq7kpncf9qrtgq94q5sta6a.png"
+import graphique from "../../public/assets/images/20250520_1621_Revenus Agriculteurs Augmentés_simple_compose_01jvq7ybjxedys1c0ze3s4vh82.png"
+import bonheur from "../../public/assets/images/20250520_1629_Agriculteurs Heureux et Récolte_simple_compose_01jvq8bdf3f3as41q6xdwehgn5.png"
+import evolution from "../../public/assets/images/20250520_1818_Croissance Agricole Africaine_simple_compose_01jvqej9hpe1vtwmzkmprxm287.png"
+import { IBM_Plex_Sans } from "next/font/google";
 
 export default function Home() {
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="flex flex-col bg-white">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="flex px-30 mt-16 py-8" >
+        <div className="flex flex-col w-[40%] mb-4">
+        <h1 className="text-6xl font-bol text-[#924532] mb-2">Tiwe : Donner du pouvoir aux agriculteurs africains</h1>
+        <p className="text-2xl mb-4 text-gray-600">Une application web/mobile pour suivre vos recoltes, trouver des acheteurs et acceder au credit</p>
+        <div className="flex gap-4 text-white mt-4 mb-4">
+          <button className="bg-green-700 p-2 rounded-sm">Tester l'appication</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        </div>
+        <div className="">
+          
+        </div>
+      </section>
+
+
+      
+ 
+      <section className="bg-yellow-50 px-30 py-8">
+        <h1 className="text-xl font-bold mb-4 mt-4">Les Problemes</h1>
+        <div className="flex justify-between mb-15">
+          <p className="text-3xl mb-4">
+          En Côte d’Ivoire,<br /> les petits agriculteurs qui,<br /> produisent 70 % des récoltes,<br /> opèrent dans le 
+          secteur informel et <br />font  face à des obstacles majeurs : 
+        </p>
+        <Image
+        src={probleme}
+        height={400}
+        width={400}
+        alt=""
+        className="object-cover"
+        />
+        </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-2">
+            <div className="border border-gray-300 p-6">
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Manque d’organisation </h3> 
+              <p>
+                Sans outils simples, ils peinent à suivre leurs récoltes, 
+                ventes, et finances, ce qui entraîne des pertes (20–30 %) et une mauvaise 
+                planification. 
+              </p>
+            </div>
+
+            <div className="border border-gray-300 p-6">
+              <h3 className="font-bold  text-lg sm:text-xl mb-2"> Revenus incertains </h3>
+              <p>
+                Les intermédiaires captent jusqu’à 40 % de leurs gains, et 
+                beaucoup ignorent leurs revenus réels faute de registres. 
+              </p>
+            </div>
+            <div className="border border-gray-300 p-6">
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Exclusion bancaire </h3> 
+              <p>
+                Dans le secteur informel, sans données fiables, les 
+                agriculteurs n’accèdent pas aux prêts pour investir dans leurs exploitations.
+              </p>
+            </div>
+          </div>
+        
+      </section>
+
+
+       <section className="px-30 py-8">
+        <h1 className="text-xl font-bold"> La solution </h1>
+        <p className="mb-4 text-3xl">Tiwé est une application  <br /> web et mobile <br /> conçue pour les agriculteurs,<br /> avec des 
+          fonctionnalités simples et puissantes : 
+        </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-2">
+            <div className="border border-gray-300 p-2">
+              <h3 className="font-bold text-lg sm:text-xl mb-2">Suivez vos récoltes</h3>
+              <p>
+                Enregistrez vos données (quantité, qualité, calendrier) pour 
+                réduire les pertes et planifier vos ventes. 
+              </p>
+               Suivez vos cultures en temps réel pour réduire les pertes 
+                (20–30 %) dues au mauvais timing ou au stockage. 
+            </div>
+            <div className="border border-gray-300 p-2">
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Trouvez des acheteurs</h3>
+              <p>
+                Connectez-vous directement à des grossistes, 
+                supermarchés, ou exportateurs via notre place de marché. 
+              </p>
+              Trouvez des acheteurs fiables, négociez vos 
+              prix, et évitez les intermédiaires qui prennent jusqu’à 30 % de vos revenus. 
+            </div>
+            <div className="border border-gray-300 p-2">
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Accédez au crédit</h3>
+              <p>
+                Créez un profil de crédit basé sur vos données pour obtenir des 
+                prêts abordables auprès de nos partenaires financiers.
+              </p>
+              <p>
+                 Transformez vos données de production en un profil 
+                  de crédit pour décrocher des financements auprès de microfinances ou de banques 
+                  agricoles.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg sm:text-xl mb-2">Utiliser une appli faite pour vous</h3>
+              <p> Profitez d’une interface simple avec des icônes, 
+                  des commandes vocales, même sur un smartphone basique. </p>
+            </div>
+          
+          </div>
+      </section> 
+
+      <section className="bg-yellow-50 px-30 py-8">
+        <h1 className="text-3xl font-bold"> Transformer l’agriculture,<br /> une récolte à la fois</h1>
+        <p className="mb-4">Tiwé va au-delà d’une simple application. Nous créons un avenir où : </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-2">
+          <div className="border border-gray-300 p-6">
+            <Image
+            src={graphique}
+            height={250}
+            width={250}
+            alt=""
+            className="w-full object-cover object-center mb-4"
+            />
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Les agriculteurs gagnent plus</h3>
+              <p>
+                +20–30 % de revenus en supprimant les intermédiaires. 
+              </p>
+            </div>
+            <div className="border border-gray-300 p-6">
+              <Image
+            src={bonheur}
+            height={250}
+            width={250}
+            alt=""
+            className="w-full object-cover object-center mb-4"
+            />
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">Les pertes diminuent</h3>
+              <p>
+                Réduction de 20–30 % des pertes post-récolte grâce au suivi. 
+              </p>
+            </div>
+            <div className="border border-gray-300 p-6">
+               <Image
+            src={evolution}
+            height={250}
+            width={250}
+            alt=""
+            className="w-full object-cover object-center mb-4"
+            />
+              <h3 className="font-bold  text-lg sm:text-xl mb-2">L’Afrique grandit </h3>
+              <p>
+               Objectif de connecter 1 million d’agriculteurs d’ici 2030. 
+              </p>
+            </div>
+        </div>
+      </section>
+
+       <section className="px-30 py-8">
+        <h1 className="text-3xl font-bold"> Qui sommes-nous ? </h1>
+        <p className="mb-4">Tiwé est une startup AgriTech basée à Abidjan. Notre mission est simple : 
+            autonomiser les petits agriculteurs en leur donnant les outils pour prospérer. Avec une appli 
+            simple et des outils puissants, nous aidons les agriculteurs à vendre plus, perdre moins, et 
+            obtenir des financements. 
+            Vision : Une Afrique où chaque agriculteur utilise la technologie pour réussir. 
+            Mission : Connecter, simplifier, financer – pour une agriculture plus forte.
+          </p>
+          
+      </section>
+      
+
+      <footer className="px-30 py-8 bg-yellow-50">
+        <h1 className="font-bold text-lg sm:text-xl mb-4"> Rejoignez la révolution agricole </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-2">
+          <div className="border-r border-gray-300 p-2">
+            <h3  className=" mb-2">Prêt à transformer votre agriculture ou devenir partenaire ? </h3>
+            <p className="text-gray-400 text-[14px]">● Email : contact@tiwe.app</p> 
+            <p className="text-gray-400 text-[14px]">● Téléphone : +225 01 23 45 67 89 </p> 
+            <p className="text-gray-400 text-[14px]">● Siège : Abidjan, Côte d’Ivoire.</p>
+          </div>
+          <div className="mt-2">
+            <h3  className="mb-2">Tester notre MVP </h3>
+            <form action="" className="flex flex-col mt-7">
+              <label htmlFor="" className="text-gray-400 text-[14px]">Nom</label>
+              <input type="text" className="border border-gray-300"/>
+
+              <label htmlFor="" className="text-gray-400 text-[14px]">Contact</label>
+              <input type="text" name="" id="" className="border border-gray-300"/>
+
+              <button className="bg-[#924532] text-white w-[50%] self-center mt-4">Soumettre</button>
+             
+            </form>
+          </div>
+
+          <div className="border-l border-gray-300 p-2 mt-2">
+            <h3>Suivez-nous</h3>
+          </div>
+        </div>
       </footer>
     </div>
   );
