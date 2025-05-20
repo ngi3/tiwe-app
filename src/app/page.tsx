@@ -10,7 +10,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 export default function Home() {
   
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col">
 
       <section className="flex px-30 mt-16 py-8" >
         <div className="flex flex-col w-[40%] mb-4">
