@@ -1,7 +1,6 @@
 import { ModalType } from '../Types/useTypes'
 
-export default function AddFormPrev({onClose, openModal, onOpen} : ModalType) {
-
+export default function AddFormAcheteurs({onClose, openModal, onOpen} : ModalType) {
   return (
     <>
         {openModal && (
@@ -10,20 +9,19 @@ export default function AddFormPrev({onClose, openModal, onOpen} : ModalType) {
                     <div className='flex justify-end cursor-pointer' onClick={onClose}>Fermer</div>
 
                     <form className='flex flex-col gap-1'>
-                      <label htmlFor="">Nom de la culture</label>
+                      <label htmlFor="">Nom du client *</label>
+                     <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+
+                      <label htmlFor="">Telephone *</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Superficie occupee</label>
+                      <label htmlFor="">Adresse</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Quantite a recolter</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Date de recolte prevue</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Plantation concernee</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      
+                      <label htmlFor="">Type de client</label>
+                      <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""> </option>
+                      </select>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>
                     </form>

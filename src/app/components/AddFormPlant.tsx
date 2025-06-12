@@ -12,14 +12,13 @@ export default function AddFormPlant({onClose, openModal, onOpen} : ModalType) {
                       <label htmlFor="">Nom de la plantation</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Superficie</label>
+                      <label htmlFor="">Localisation</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Cultures cultivees</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Ville</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      <label htmlFor="">Surface</label>
+                      <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""> </option>
+                      </select>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>
                     </form>

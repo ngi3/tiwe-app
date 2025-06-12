@@ -19,10 +19,12 @@ export default function AddFormRecolte({onClose, openModal, onOpen} : ModalType)
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
                       <label htmlFor="">Date de recolte</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      <input type="date" className='border border-gray-300 p-2 rounded-md'/>
 
                       <label htmlFor="">Plantation concernee</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""> </option>
+                      </select>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>
                     </form>

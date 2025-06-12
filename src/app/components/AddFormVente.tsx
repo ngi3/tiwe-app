@@ -9,23 +9,23 @@ export default function AddFormVente({onClose, openModal, onOpen} : ModalType) {
                     <div className='flex justify-end cursor-pointer' onClick={onClose}>Fermer</div>
 
                     <form className='flex flex-col gap-1'>
-                      <label htmlFor="">Nom de la culture</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Nombre de lots</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
-                      <label htmlFor="">Ville</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
-
+                      
                       <label htmlFor="">Nom du client</label>
+                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+
+                      <label htmlFor="">Lots a vendre</label>
+                       <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""> </option>
+                      </select>
+
+                      <label htmlFor="">Prix par lot</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
                       <label htmlFor="">Lieu de livraison</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
                       <label htmlFor="">Date de livraison</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      <input type="date" className='border border-gray-300 p-2 rounded-md'/>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>
                     </form>

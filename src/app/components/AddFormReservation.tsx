@@ -9,16 +9,22 @@ export default function AddFormReservation({onClose, openModal, onOpen} : ModalT
                     <div className='flex justify-end cursor-pointer' onClick={onClose}>Fermer</div>
 
                     <form className='flex flex-col gap-1'>
-                      <label htmlFor="">Nom de la culture</label>
+                      <label htmlFor="">Nom du client *</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Prix unitaire</label>
+                      <label htmlFor="">Telephone</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Quantite a reserver</label>
+                      <label htmlFor="">Produit</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Date de vente prevue</label>
+                      <label htmlFor="">Quantite (lots) *</label>
+                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      
+                      <label htmlFor="">Date de livraison</label>
+                      <input type="date" className='border border-gray-300 p-2 rounded-md'/>
+
+                      <label htmlFor="">Prix par lot (FCFA) *</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>

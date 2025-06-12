@@ -10,13 +10,23 @@ export default function AddFormCult({onClose, openModal, onOpen} : ModalType) {
 
                     <form className='flex flex-col gap-1'>
                       <label htmlFor="">Nom de la culture</label>
-                      <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""></option>
+                      </select>
 
                       <label htmlFor="">Superficie occupee</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
-                      <label htmlFor="">Plantation concernee</label>
+                      <label htmlFor="">Date de recolte prevue </label>
+                      <input type="date" className='border border-gray-300 p-2 rounded-md'/>
+
+                      <label htmlFor="">Quantite a recolter</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                      
+                      <label htmlFor="">Plantation concernee</label>
+                      <select name="" id="" className='border border-gray-300 p-2 rounded-md'>
+                        <option value=""> </option>
+                      </select>
                       
                       <button className=' bg-[#924532] text-white rounded-md p-3 my-2 hover:bg-[#97371f]'>Enregistrer</button>
                     </form>
