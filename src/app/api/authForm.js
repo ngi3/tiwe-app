@@ -1,12 +1,12 @@
 import { google } from "googleapis"; 
- 
+
 export default async function handler(req, res) { 
   if (req.method !== "POST") { 
     return res.status(405).json({ message: "Seules les requêtes POST sont autorisées" }); 
   } 
- 
+
   const { name, email, message } = req.body; // Ajustez selon les champs de votre formulaire 
- 
+
   try { 
     // Authentification avec Google Sheets 
     const auth = new google.auth.GoogleAuth({ 
@@ -20,9 +20,9 @@ export default async function handler(req, res) {
         "https://www.googleapis.com/auth/spreadsheets", 
       ], 
     }); 
- 
+
     const sheets = google.sheets({ version: "v4", auth }); 
- 
+
     // Ajouter les données au Google Sheet 
     await sheets.spreadsheets.values.append({ 
       spreadsheetId: process.env.GOOGLE_SHEET_ID, 
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
         values: [[name, email, message]], // Ajustez selon vos champs 
       }, 
     }); 
- 
+
     return res.status(201).json({ message: "Données enregistrées avec succès" }); 
   } catch (error) { 
     console.error("Erreur:", error); 

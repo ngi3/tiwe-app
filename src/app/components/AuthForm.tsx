@@ -41,7 +41,7 @@ export default function AuthForm() {
   return (
     <div className='max-x-[700px] relative z-50 m-auto min-h-[200px] mt-30 bg-white p-4 border border-gray-800 rounded-md shadow-lg w-[50%]'>
       <form className='flex flex-col gap-1'>
-         <label htmlFor="">Nom</label>
+        <label htmlFor="">Nom</label>
         <input type="text"
           name='name'
           value={formData.name}

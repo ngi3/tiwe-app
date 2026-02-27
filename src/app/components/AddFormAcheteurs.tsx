@@ -10,7 +10,7 @@ export default function AddFormAcheteurs({onClose, openModal, onOpen} : ModalTyp
 
                     <form className='flex flex-col gap-1'>
                       <label htmlFor="">Nom du client *</label>
-                     <input type="text" className='border border-gray-300 p-2 rounded-md'/>
+                    <input type="text" className='border border-gray-300 p-2 rounded-md'/>
 
                       <label htmlFor="">Telephone *</label>
                       <input type="text" className='border border-gray-300 p-2 rounded-md'/>

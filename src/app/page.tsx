@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Image from "next/image";
 import cutivateur from "../../public/assets/images/WhatsApp Image 2025-05-20 at 6.01.01 PM.jpeg"
-import probleme from "../../public/assets/images/20250520_1616_Défis Agricoles_simple_compose_01jvq7kpncf9qrtgq94q5sta6a.png"
-import graphique from "../../public/assets/images/20250520_1621_Revenus Agriculteurs Augmentés_simple_compose_01jvq7ybjxedys1c0ze3s4vh82.png"
-import bonheur from "../../public/assets/images/20250520_1629_Agriculteurs Heureux et Récolte_simple_compose_01jvq8bdf3f3as41q6xdwehgn5.png"
+import probleme from "../../public/assets/images/defis-agricoles.png"
+import graphique from "../../public/assets/images/revenus-agriculteurs.png"
+import bonheur from "../../public/assets/images/agriculteurs-heureux.png"
 import evolution from "../../public/assets/images/20250520_1818_Croissance Agricole Africaine_simple_compose_01jvqej9hpe1vtwmzkmprxm287.png"
 import { GiReceiveMoney, GiPlantRoots} from "react-icons/gi";
 import { FcMoneyTransfer } from "react-icons/fc";

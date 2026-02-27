@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Dashboard() {
-  return (
+    return (
     <div className='p-4'>
         <h1 className='text-2xl font-bold'>Tableau de bord</h1>
         <h3 className='mb-4'>Vue d'ensemble de votre exploitation agricole</h3>
@@ -18,7 +18,7 @@ export default function Dashboard() {
                 <h4>Lots en stocks</h4>
                 <p className='text-3xl font-bold'>156</p>
             </div>
-             <div className='p-4 border border-l-3 w-[400px] shadow-sm border-purple-200 rounded-md'>
+            <div className='p-4 border border-l-3 w-[400px] shadow-sm border-purple-200 rounded-md'>
                 <h4>Reservations</h4>
                 <p className='text-3xl font-bold'>23</p>
             </div>
